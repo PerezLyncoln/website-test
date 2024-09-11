@@ -1,0 +1,53 @@
+@keyframes SlideinLeft {
+    from {
+        transform: translateX(-500px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+@keyframes SlideinLeft2 {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+@keyframes SlideinRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.header1 {
+    animation-name: SlideinLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+.name.in-view {
+    animation-name: SlideinLeft2;
+    animation-duration: 1s;
+}
+.namedescription.in-view {
+    animation-name: SlideinLeft2;
+    animation-duration: 1.5s;
+}
+.school.in-view {
+    animation-name: SlideinRight;
+    animation-duration: 1s;
+}
+.schooldescription.in-view {
+    animation-name: SlideinRight;
+    animation-duration: 1.5s;
+}
